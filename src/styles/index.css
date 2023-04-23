@@ -1,8 +1,10 @@
 .semaforo{
     background-color: black;
-    padding: -5px;
+    padding: 5px;
     display: inline-block;
-    
+    border-radius: 5px;
+    margin-left: 620px;
+        
 }
 
 .light{
@@ -14,19 +16,30 @@
     margin-left: 5px;
     margin-right: 5px;
     
+    
 }
 
 .red{
     background-color: red;
+    margin: 10px;
 }
 .yellow{
     background-color: yellow;
+    margin: 10px;
 }
 
 .green{
     background-color: green;
+    margin: 10px;
 }
 
 .glow{
     box-shadow: 0 0 50px #f8f9fa;
+}
+
+.palito{
+    width: 25px;
+    height: 100px;
+    background-color: black;
+    margin-left: 671px;
 }

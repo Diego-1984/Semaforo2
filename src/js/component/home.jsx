@@ -3,6 +3,8 @@ import React, { useState } from "react";
 const Home = () => {
 	const {selectedColor, setSelectecColor }= useState("")
 		return (
+		<>
+		<div className="palito"></div>
 		<div className="semaforo">
 			<div
 			onClick={()=>setSelectecColor("red")} 
@@ -21,6 +23,7 @@ const Home = () => {
 			</div>
 			
 		</div>
+		</>	
 	);
 };
 
