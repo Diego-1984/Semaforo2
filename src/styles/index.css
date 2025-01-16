@@ -24,20 +24,30 @@
 }
 
 .red{
-    background-color: red;
+    background-color: black;
     margin: 10px;
 }
 .yellow{
-    background-color: yellow;
+    background-color: black;
     margin: 10px;
 }
 
 .green{
-    background-color: green;
+    background-color: black;
     margin: 10px;
 }
 
-.glow{
+
+.glowred{
+    background-color: red;
+    box-shadow: 0 0 50px #f8f9fa;
+}
+.glowyellow{
+    background-color: orange;
+    box-shadow: 0 0 50px #f8f9fa;
+}
+.glowgreen{
+    background-color: green;
     box-shadow: 0 0 50px #f8f9fa;
 }
 
@@ -55,4 +65,70 @@
     background-repeat: no-repeat;
     height:100vh
     
+}
+.Mensaje{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+}
+
+.Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10px;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+button.Reload {
+    font-weight: 600;
+    color: rgb(80, 77, 77);
+    padding: 10px 20px;
+    background: linear-gradient(145deg, #d3d3d3, #a9a9a9);
+    border: 1px solid #808080;
+    border-radius: 0.5em;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.6), 
+                4px 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+button.Reload::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 300%;
+    height: 100%;
+    background: rgba(88, 77, 77, 0.2);
+    transform: skewX(-45deg);
+    transition: left 0.3s ease;
+}
+
+button.Reload:hover::before {
+    left: 100%;
+}
+
+button.Reload:hover {
+    background: linear-gradient(145deg, #bcbcbc, #8a8a8a);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: inset 1px 1px 4px rgba(255, 255, 255, 0.6), 
+                5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+button.Reload:active {
+    transform: translateY(2px) scale(0.98);
+    background: linear-gradient(145deg, #a9a9a9, #d3d3d3);
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3), 
+                2px 2px 4px rgba(255, 255, 255, 0.5);
+}
+
+button.Reload:focus {
+    outline: none;
+    box-shadow: 0px 0px 5px 3px rgba(192, 192, 192, 0.8);
 }
